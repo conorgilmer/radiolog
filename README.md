@@ -21,6 +21,7 @@ Database app to store Radio Reception Reports
 + Start
 + End
 + Power 
++ CallSign
 + Name
 + Band (LW/MW/SW/FM/DAB)
 + Type (AM/FM/SSB/DRM/DAB)
