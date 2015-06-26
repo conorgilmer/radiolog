@@ -15,3 +15,20 @@ INSERT INTO `band` (`id`, `code`, `name`, `range`) VALUES
 (4, 'FM', 'Frequency Modulation', '87.5 - 108.5 MHz');
 
 
+CREATE TABLE IF NOT EXISTS `type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` CHAR(3) NOT NULL,
+  `name` VARCHAR(50) NOT NULL,
+  `comment` VARCHAR(75) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+INSERT INTO `type` (`id`, `code`, `name`, `comment`) VALUES
+(1, 'AM', 'Amplitude Modulation', 'Public Radio'),
+(2, 'FM', 'Frequency Modulation', 'Military/Communications/Public Radio'),
+(3, 'DAB', 'Digital Audio Broadcasting', 'Public Radio'),
+(4, 'DRM', 'Digital Radio Mondiale', 'Public Radio'),
+(5, 'SSB', 'Single Side Band', 'Amateur Radio');
+
+
