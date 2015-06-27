@@ -27,9 +27,9 @@ class DB_con
   return $res;
  }
  
- public function update($table,$id,$low,$high,$wdate,$comment)
+ public function update($table,$id,$wdate, $freq, $name, $band, $type, $tx, $country, $rep, $rec, $aerial, $sinpo, $remarks)
  {
-  $res = mysql_query("UPDATE $table SET low='$low', high='$high', date='$wdate', comment='$comment' WHERE id=".$id);
+  $res = mysql_query("UPDATE $table SET frequency='$freq', name='$name', date='$wdate', band='$band', type='$type', transmitter='$tx', country='$country', report='$rep', receiver='$rec', aerial='$aerial', sinpo='$sinpo', remarks='$remarks', times=now() WHERE id=".$id);
   return $res;
  }
 
