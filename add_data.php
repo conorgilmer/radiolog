@@ -55,9 +55,9 @@ if(isset($_POST['btn-save']))
     <form method="post">
     <table align="center">
   <tr>
-    <th><a href="add_data.php">Add Reading</a></th>
-    <th><a href="index.php">List</a></th>
-    <th><a href="genlines.php">Graph</a></th>
+    <th><a href="add_data.php">Add Log</a></th>
+    <th><a href="index.php">List Logs</a></th>
+    <th><a href="bands.php">List Bands</a></th>
     </tr>
     <tr>
     <td colspan="3"><input type="text" name="wdate" placeholder="Date" required /></td>
