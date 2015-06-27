@@ -1,6 +1,9 @@
 #Radio Log
 Database app to store Radio Reception Reports
-
++ List Logs
++ List Bands
++ List Types
++ Add Log Entry
 
 #LogTable 
 + Frequency 
@@ -34,7 +37,6 @@ Database app to store Radio Reception Reports
 + SINPO
 + Remarks
 
-#BandTable 
 #BandTable 
 + Band (LW/MW/SW/FM/DAB)
 + BandName
