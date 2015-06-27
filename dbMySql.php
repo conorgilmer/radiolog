@@ -11,7 +11,7 @@ class DB_con
  
  public function insertLog($date, $freq, $name, $band, $type, $tx, $country, $rep, $rec, $aerial, $sinpo, $remarks)
  {
-  $res = mysql_query("INSERT radiolog(id, date, frequency, name, band, type,transmitter, country, report, receiver, aerial, sinpo, remarks,times) VALUES('','$date','$freq','$name','$band', '$type',  '$tx', '$country', '$rep', '$rec', '$aerial', '$sinpo', '$remarks', '$type',now())");
+  $res = mysql_query("INSERT radiolog(id, date, frequency, name, band, type,transmitter, country, report, receiver, aerial, sinpo, remarks,times) VALUES('','$date','$freq','$name','$band', '$type',  '$tx', '$country', '$rep', '$rec', '$aerial', '$sinpo', '$remarks', now())");
   return $res;
  }
  
