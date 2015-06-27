@@ -1,4 +1,23 @@
 
+
+CREATE TABLE IF NOT EXISTS `radiolog` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date`        DATE        NOT NULL,
+  `frequency`   VARCHAR(10) NOT NULL,
+  `name`        VARCHAR(30) NOT NULL,
+  `band`        CHAR(5)     NOT NULL,
+  `type`        CHAR(5)     NOT NULL,
+  `transmitter` VARCHAR(10),
+  `country`     VARCHAR(10),
+  `report`      VARCHAR(30),
+  `receiver`    VARCHAR(10),
+  `aerial`      VARCHAR(10),
+  `sinpo`       VARCHAR(10),
+  `remarks`     VARCHAR(50),
+  `times`       DATETIME    NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
 CREATE TABLE IF NOT EXISTS `band` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `code` CHAR(3) NOT NULL,
