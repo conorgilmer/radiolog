@@ -58,7 +58,7 @@ if(isset($_POST['btn-update']))
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Weight Monitor</title>
+<title>Radio Log Book</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
