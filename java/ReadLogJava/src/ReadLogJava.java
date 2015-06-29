@@ -2,19 +2,29 @@
  * Read Java MySql database of Radio Log files
  */
 import java.sql.*;
+import java.util.Properties;
+import java.io.FileInputStream;
 
 public class ReadLogJava {
 
 	public static void main(String[] args) {
-		System.out.println("Read Log Book Entries");
+		System.out.println("Radio Log Book Entries");
 		
 		try
 	    {
+			Properties props = new Properties();
+			props.load(new FileInputStream("config/db.properties"));
+			
+			String theUser  = props.getProperty("dbuser");
+			String thePass  = props.getProperty("dbpass");
+			String theUrl   = props.getProperty("dbserver");
+			
+			
 	      // create our mysql database connection
 	      String myDriver = "org.gjt.mm.mysql.Driver";
-	      String myUrl = "jdbc:mysql://localhost/opendata";
+	      //String myUrl = "jdbc:mysql://localhost/opendata";
 	      Class.forName(myDriver);
-	      Connection conn = DriverManager.getConnection(myUrl, "root", "");
+	      Connection conn = DriverManager.getConnection(theUrl, theUser, thePass);
 	      System.out.println("Connected to DB.\n");
 	  
 	      // our SQL SELECT query.
