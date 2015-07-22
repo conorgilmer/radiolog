@@ -51,7 +51,7 @@ function edit_id(id)
 	{
 			?>
             <tr>
-            <td><?php echo $row[1]; ?></td>
+<td><?php echo "<a href=\"list.php?mode=".$row[1]."\"a>".$row[1]; ?></td>
             <td><?php echo $row[2]; ?></td>
             <td><?php echo $row[3]; ?></td>
  <td align="center"><a href="javascript:edit_id(<?php echo $row[0]; ?>)"><img src="edit.png" width="40" height="40" alt="EDIT" /></a></td>
