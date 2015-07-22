@@ -57,7 +57,7 @@ function edit_id(id)
             <td><?php echo $row[2]; ?></td>
             <td><?php echo $row[3]; ?></td>
             <td><?php echo "<a href=\"list.php?band=".$row[4]."\"a>".$row[4]; ?></td>
-            <td><?php echo $row[5]; ?></td>
+            <td><?php echo "<a href=\"list.php?mode=".$row[5]."\"a>".$row[5]; ?></td>
  <td align="center"><a href="javascript:edit_id(<?php echo $row[0]; ?>)"><img src="edit.png" width="40" height="40" alt="EDIT" /></a></td>
             <td align="center"><a href="javascript:del_id(<?php echo $row[0]; ?>)"><img src="delete.png" width="40" height="40" alt="DELETE" /></a></td>
        

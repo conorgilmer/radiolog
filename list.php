@@ -2,8 +2,16 @@
 include_once 'dbMySql.php';
 $con = new DB_con();
 $table = "radiolog";
+if (isset($_GET['band'])) {
 $va = $_GET['band']; //"VHF";
 $res=$con->selectband($table, $va);
+}
+elseif (isset($_GET['mode'])) {
+$va = $_GET['mode']; //"VHF";
+$res=$con->selectmode($table, $va);
+} else {
+$res=$con->select($table);
+}
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

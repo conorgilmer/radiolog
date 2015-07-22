@@ -14,10 +14,23 @@ class DB_con
   $res = mysql_query("INSERT radiolog(id, date, frequency, name, band, type,transmitter, country, report, receiver, aerial, sinpo, remarks,times) VALUES('','$date','$freq','$name','$band', '$type',  '$tx', '$country', '$rep', '$rec', '$aerial', '$sinpo', '$remarks', now())");
   return $res;
  }
- 
+
  public function select($table)
  {
   $res=mysql_query("SELECT * FROM $table");
+  return $res;
+ }
+
+ 
+ public function selectband($table, $val)
+ {
+  $res=mysql_query("SELECT * FROM $table where band = '$val'");
+  return $res;
+ }
+ 
+ public function selectmode($table, $val)
+ {
+  $res=mysql_query("SELECT * FROM $table where type = '$val'");
   return $res;
  }
 
